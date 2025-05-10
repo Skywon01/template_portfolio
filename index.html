@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#">Lien 1</a>
+        <a href="#">Lien 2</a>
+        <a href="#">Lien 3</a>
+        <button id="toggleTheme" class="theme-toggle" aria-label="Changer de thème">🌙</button>
+    </nav>
+</header>
+
+<main>
+    <section class="aboutMe">
+        <h1>À propos de moi</h1>
+    </section>
+
+    <div class="myPhotoContainer">
+        <img src="https://placehold.co/300" class="myPhoto" alt="Photo de moi" />
+    </div>
+
+    <section class="projects fade-in-section">
+        <h2>Mes projets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Nom du projet</h3>
+                <p>Petite description rapide de ce que fait le projet.</p>
+                <a href="#" target="_blank">Voir le projet</a>
+            </div><div class="project-card">
+                <h3>Nom du projet</h3>
+                <p>Petite description rapide de ce que fait le projet.</p>
+                <a href="#" target="_blank">Voir le projet</a>
+            </div><div class="project-card">
+                <h3>Nom du projet</h3>
+                <p>Petite description rapide de ce que fait le projet.</p>
+                <a href="#" target="_blank">Voir le projet</a>
+            </div>
+            <!-- Dupliquer ici -->
+        </div>
+    </section>
+
+    <section class="skills fade-in-section">
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Angular / Symfony / PHP</li>
+            <li>Java / Spring Boot</li>
+            <li>API REST / MySQL</li>
+        </ul>
+    </section>
+
+    <section class="contact fade-in-section">
+        <h2>Me contacter</h2>
+        <form class="myForm">
+            <input type="text" placeholder="Votre nom" />
+            <input type="email" placeholder="Votre email" />
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> TonNom. Tous droits réservés.</p>
+    <div class="socials">
+        <a href="https://github.com/tonprofil" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+        <a href="mailto:tonmail@example.com">Email</a>
+    </div>
+</footer>
+
+<button id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script defer type="module" src="js/main.js"></script>
+</body>
+</html>
